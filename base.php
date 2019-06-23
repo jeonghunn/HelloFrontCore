@@ -219,15 +219,17 @@ function PostAct($url, $arrayvars){
     $arrayvars[]= array('ip_addr', getIPAddr());
 
 
-    for ($i=0 ; $i < count($arrayvars);$i++){
+
+    foreach ($arrayvars as $key => $value){
+
+    $vars = $key."=".$value."&";
 
 
-    $vars = $vars.$arrayvars[$i][0]."=".$arrayvars[$i][1];
-  if($i != count($arrayvars) - 1){
- $vars = $vars."&";
   }
+    //Delete last char
+    substr($vars, 0, -1);
 
-}
+
 
 
 
