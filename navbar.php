@@ -21,10 +21,11 @@
         </ul>
         <ul class="navbar-nav">
 
-            <?php  if (!CheckLogin()){
+            <?php
+            if (!CheckLogin()){
                if(getActParameter() != "signin") echo "<li class=\"nav-item\"><a class=\"nav-link\" href=\"signin\">" .T('sign_in')."</a></li>";
             }else{
-                echo "<li class=\"nav-item\"><a class=\"nav-link\" href=\"logout\">" .$user_info['srl']."</a></li>";
+                echo "<li class=\"nav-item\"><a class=\"nav-link\" href=\"logout\">" .getUser()['name_2']."</a></li>";
             }  ?>
 
         <?php if (isDevelopmentServer()) echo " <li class=\"nav-item\"><a class=\"nav-link\" href=\"info\">Development Server</a></li>" ?>

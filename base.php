@@ -371,6 +371,11 @@ if($b!==FALSE) unset($list_arr[$b]);
 
 function lottoNum($min,$max=100){ 
     return(rand(1,$max)<=$min); 
-} 
+}
+
+function getUser(){
+    global $user_info;
+    return $user_info;
+}
       
 ?>
