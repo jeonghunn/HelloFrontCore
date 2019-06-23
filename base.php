@@ -214,18 +214,19 @@ function getActParameter()
 }
 
 function PostAct($url, $arrayvars){
-
     $vars = null;
-    $arrayvars[]= array('ip_addr', getIPAddr());
+
+$arrayvars['ip_addr']= getIPAddr();
 
 
 
     foreach ($arrayvars as $key => $value){
 
-    $vars = $key."=".$value."&";
+    $vars = $vars.$key."=".$value."&";
 
 
   }
+
     //Delete last char
     substr($vars, 0, -1);
 
