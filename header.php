@@ -100,7 +100,7 @@
       <script src="pages/js/eg.min.js"></script>
 
       <!--      Interect-->
-      <script src="http://code.interactjs.io/interact-1.2.4.min.js"></script>
+      <script src="pages/js/interact-1.2.4.min.js"></script>
 
       <!--     Animation -->
       <link rel="stylesheet"
