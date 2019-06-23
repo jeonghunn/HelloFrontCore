@@ -3,8 +3,9 @@
 
     <a class="container">
         <br>
-        <a href="../modules/info"><p class="text-muted" style="text-align: center;">Copyrightⓒ. 2017-2019. UnopenedBox. All Rights
-                Reserved.</p></a>
+        <a href="info"><p class="text-muted" style="text-align: center;"><?php
+                S('copyright_desc');
+                ?></p></a>
 
 </div>
 
