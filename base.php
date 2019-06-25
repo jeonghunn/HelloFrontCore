@@ -377,5 +377,10 @@ function getUser(){
     global $user_info;
     return $user_info;
 }
+
+function getChannel(){
+    global $channel;
+    return $channel;
+}
       
 ?>

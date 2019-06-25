@@ -1,11 +1,18 @@
 <div id="blurryscroll" aria-hidden="true"></div>
 <!-- Static navbar -->
 <nav class="navbar navbar-expand-lg navbar-light">
+    <div>
     <a class="navbar-brand" href="home" style=" font-weight: bold;"><?php S('app_full_name') ?></a>
+
+
+    <a class="navbar-brand active" id="nav_channel_btn" href="home" style="visibility:collapse; color :#FFFFFF; background-color: #000000; border-radius: 10px; padding-left: 4px ; padding-right: 4px; text-shadow: 1px;">Android Developers</a>
+
+    </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
+
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav mr-auto">
 
@@ -13,7 +20,7 @@
 
 
 
-                <a class="nav-link" href="birthday"><?php S('birthday') ?></a>
+
             </li>
 
 
