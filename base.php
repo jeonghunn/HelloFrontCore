@@ -45,7 +45,7 @@ function getAPIKey(){
 
 function importHeader($html_title)
 {
-    require_once 'pages/core/header.php';
+    require_once 'pages/modules/layout/view/header.php';
 }
 
 function getCorePUrl(){
@@ -142,9 +142,9 @@ function getHttpLanguage(){
 
 
 function ErrorMessage($msg) {
-  require_once 'core/header.php';
+  require_once 'modules/layout/view/header.php';
 echo '<div class="jumbotron"><h1>'.T('error_'.$msg).'</h1><p>'.T('error_'.$msg.'_des').'</p></div>';
-    require_once 'core/footer.php';
+    require_once 'modules/layout/view/footer.php';
 
     exit();
 }
