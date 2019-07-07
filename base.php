@@ -142,11 +142,11 @@ function getHttpLanguage(){
 
 
 function ErrorMessage($msg) {
-  require_once 'modules/layout/view/header.php';
-echo '<div class="jumbotron"><h1>'.T('error_'.$msg).'</h1><p>'.T('error_'.$msg.'_des').'</p></div>';
-    require_once 'modules/layout/view/footer.php';
 
-    exit();
+echo '<div class="jumbotron"><h1>'.T('error_'.$msg).'</h1><p>'.T('error_'.$msg.'_des').'</p></div>';
+
+
+
 }
 
 function startsWith($haystack, $needle)
