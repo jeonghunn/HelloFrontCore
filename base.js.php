@@ -48,7 +48,7 @@ function getReq(data){
         auth : getUserAuth()
     }
 
-    var resultdata = data.concat(infodata);
+    var resultdata = $.extend(infodata, data);
 
     return {
         method: 'POST', //방식
