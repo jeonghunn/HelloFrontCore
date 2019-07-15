@@ -48,12 +48,12 @@ function getReq(data){
         auth : getUserAuth()
     }
 
-    data = data.concat(infodata);
+    var resultdata = data.concat(infodata);
 
     return {
         method: 'POST', //방식
         url: getAPIUrlS(), /* 통신할 URL */
-        data: $.param(data), headers: {
+        data: $.param(resultdata), headers: {
             'Content-Type': getRequestHeader()
         }
 
