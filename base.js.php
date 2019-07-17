@@ -66,3 +66,8 @@ function getLocale(){
     return "<?php echo getLang(); ?>";
 }
 
+
+function errorReport(msg, log){
+    alert(msg);
+
+}
