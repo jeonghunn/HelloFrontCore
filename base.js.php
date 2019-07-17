@@ -62,3 +62,7 @@ function getReq(data){
     };
 }
 
+function getLocale(){
+    return "<?php echo getLang(); ?>";
+}
+
