@@ -38,6 +38,10 @@ function getClientPUrl(){
     return "<?php echo getClientPUrl(); ?>";
 }
 
+function getIPAddress(){
+    return "<?php echo getIPAddr(); ?>";
+}
+
 function getRequestHeader(){
     return "application/x-www-form-urlencoded";
 }
