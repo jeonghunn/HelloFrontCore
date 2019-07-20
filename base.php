@@ -81,6 +81,10 @@ function getIPAddr(){
     return $_SERVER["REMOTE_ADDR"];
 }
 
+function getReferrer(){
+    return $_SERVER['HTTP_REFERER'];
+}
+
 function getNowUrl(){
     return $_SERVER["REQUEST_URI"];
 }
