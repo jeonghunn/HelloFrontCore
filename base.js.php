@@ -46,6 +46,15 @@ function getRequestHeader(){
     return "application/x-www-form-urlencoded";
 }
 
+function getUserPermission(){
+    return <?php echo getUser()['permission']; ?>;
+}
+
+function getUserSrl(){
+    return <?php echo getUser()['srl']; ?>;
+}
+
+
 function getReq(data){
     var infodata = {
         api_key : getAPIKey(),
@@ -75,3 +84,4 @@ function errorReport(msg, log){
     alert(msg);
 
 }
+
