@@ -136,6 +136,11 @@ function T($str)
         return $str;
 }
 
+function getTWithVariable($T, $value){
+    return str_replace("$1", $value, T($T));
+
+}
+
 
 
 function getHttpLanguage(){
