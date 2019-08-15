@@ -184,11 +184,11 @@ function S($str){
 }
 
 function P($str){
-  echo htmlspecialchars($str);
+  echo A($str);
 }
 
 function A($str){
-  return htmlspecialchars($str);
+  return addslashes(htmlspecialchars($str));
 }
 
 function CoreInfo(){
