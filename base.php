@@ -222,6 +222,11 @@ function getActParameter()
     return $act_parameter;
 }
 
+function getAddedParamUrl($url, $paramName, $value){
+    $separator =  strpos($url, '?') !== false ? '&' : '?';
+    return $url.$separator.$paramName.'='.$value;
+}
+
 function requestPost($url, $arrayVars, $includeBase){
     if($includeBase) array_merge($arrayVars, array('apiv'=> getAPIVersion(), 'api_key'=> getAPIKey(), 'auth'=> getUserAuth()));
     return PostAct($url, $arrayVars);
