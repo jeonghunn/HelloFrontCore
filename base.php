@@ -103,6 +103,10 @@ function getTitleColor(){
     return "#283593";
 }
 
+function contains($text, $str) {
+    return (strpos($text, $str) !== false);
+}
+
 //function getDate(){
 //    return date('Y-m-d H:i:s');
 //}
